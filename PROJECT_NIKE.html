@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nike</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        
+    }
+    ul{
+        display: flex;
+        background-color: whitesmoke;
+        height: 45px;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+    }
+    ul li{
+        padding: 20px;
+        list-style: none;
+    }
+    .nikelogo{
+        height: 30px;
+        position: relative;
+        top: -10px;
+    }
+    .navb{
+        position: relative;
+        left: 830px;
+        top: -10px;
+    }
+    .cont{
+        display: flex;
+        height: 120px;
+        background-color: white;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+    }
+    .search{
+        height: 43px;
+        position: relative;
+        top: 65px;
+        left: 45px;
+    }
+    .in{
+        border: 2px solid black;
+        height: 30px;
+        width: 220px;
+        border-radius: 10px;
+
+        position: relative;
+        top: 70px;
+        left: 60px;
+
+    }
+    .cart{
+        height: 43px;
+        position: relative;
+        top: 60px;
+        left: 950px;
+    }
+    .nikepic{
+        display: flex;
+        padding: 80px;
+    }
+    .doit{
+        height: 300px;
+        
+    }
+    p{
+        font-weight: bolder;
+        font-size: larger;
+        position:relative;
+        left: 100px;
+        top: -35px;
+        
+    }
+    p2{
+        font-weight:bold;
+        font-size: larger;
+        position:relative;
+        left: 100px;
+        top: -50px;
+        color: gray;
+        text-align: center;
+
+    }
+    p3{
+        font-weight:bold;
+        font-size: larger;
+        position:relative;
+        left: 135px;
+        top: -50px;
+        color: gray;
+        text-align: center;  
+    }
+    p10{
+        font-weight: bolder;
+        font-size: larger;
+        position:relative;
+        left: 180px;
+        top: -45px;
+    }
+    p12{
+        font-weight:bold;
+        font-size: larger;
+        position:relative;
+        color: gray;
+        text-align: center;
+        left: 180px;
+        top: -38px;
+
+    }
+    p13{
+        font-weight:bold;
+        font-size: larger;
+        position:relative;
+        color: gray;
+        text-align: center; 
+        left: 220px;
+        top: -33px;
+    }
+    .doit1{
+        height: 320px;
+        position: relative;
+        left: 50px;
+        background-color: white;
+    }
+    .doit2{
+        height: 320px;
+        position: relative;
+        left: 95px;
+    }
+    .doit3{
+        height: 310px;
+        position: relative;
+        left: 100px;
+    }
+    p16{
+        font-weight: bolder;
+        font-size: larger;
+        position:relative;
+        left: 150px;
+        top: -50px;
+    }
+    p17{
+        font-weight:bold;
+        font-size: larger;
+        position:relative;
+        left: 150px;
+        top: -50px;
+        color: gray;
+        text-align: center;
+    }
+    p18{
+        font-weight:bold;
+        font-size: larger;
+        position:relative;
+        left: 180px;
+        top: -50px;
+        color: gray;
+        text-align: center;  
+    }
+    .cart-button {
+    background: linear-gradient(to right, #0066cc, #0099ff);
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    left: 85px;
+    top: -30px;
+}
+
+.cart-button:hover {
+    background: linear-gradient(to right, #005bb5, #0088cc);
+    transform: scale(1.05);
+}
+
+.arrow {
+    font-size: 18px;
+    transition: transform 0.2s;
+}
+
+.cart-button:hover .arrow {
+    transform: translateX(5px);
+}
+.gg{
+    position: relative;
+    left: 150px;
+    top: -30px;
+}
+.ggs{
+    position: relative;
+    top: -40px;
+}
+.nikepics{
+        display: flex;
+        position: relative;
+        top: -180px;
+        padding: 80px;
+    }
+    .nikepicss{
+        display: flex;
+        position: relative;
+        top: -350px;
+        padding: 80px;
+    }
+     .nikepicsss{
+        display: flex;
+        position: relative;
+        top: -550px;
+        padding: 80px;
+     }
+     .nikepicssse{
+        display: flex;
+        position: relative;
+        top: -700px;
+        padding: 80px;
+     }
+     .nikepicsssee{
+        display: flex;
+        position: relative;
+        top: -850px;
+        padding: 80px;
+     }
+     nav{
+        position: sticky;
+       z-index: 20;
+        top: 0;
+     }
+     @media (max-width:450px){
+        .nav{
+            position: sticky;
+       z-index: 20;
+        top: 0;
+        }
+        .nikepic{
+            display: flex;
+            flex-direction:column ;
+        }
+        .nikepics{
+            display: flex;
+            flex-direction:column ;
+        }
+        .nikepics{
+            display: flex;
+            flex-direction:column ;
+        }
+        .nikepicss{
+            display: flex;
+            flex-direction:column ;
+        }
+        .nikepicsss{
+            display: flex;
+            flex-direction:column ;
+        }
+        .nikepicssse{
+            display: flex;
+            flex-direction:column ;
+        }
+        .nikepicsssee{
+            display: flex;
+            flex-direction:column ;
+        }
+       ul{
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        padding: 10px 0;
+       }
+     
+     .nikelogo {
+        top: 0;
+        height: 40px;
+      position: relative;
+      left: 0;
+    }
+
+    .navb {
+        position: static;
+        font-size: 20px;
+        display: flex;
+        gap: 20px;
+    }
+}
+   
+</style>
+<body>
+    <nav>
+        <ul>
+            <li> <img class="nikelogo" src="nike-logoo.jpg" ></li>
+            <li class="navb">Find a Store |</li>
+            <li class="navb">Help |</li>
+            <li class="navb">Join Us |</li>
+            <li class="navb">Sign In</li>
+        </ul>
+        <div class="cont">
+            <div ><img class="search" src="newse.png" ></div>
+            <div><input class="in" type="text"     placeholder="SEARCH"></div>
+            <div ><img  class="cart" src="cart.jpg" ></div>
+        </div>
+    </nav>
+    <main>
+        <div class="nikepic">
+            <div><img class="doit" src="nike.pic1 - Copy.webp"><p>AIR FORCE</p><br><p2>Men Foot Wear<br></p2><p3>177 $</p3> <button class="cart-button">
+                Add to Cart
+                <span class="arrow">➜</span>
+            </button></div>
+            <div><img class="doit1" src="https://stridestyle.netlify.app/public/assets/Images/Black/AIR+FORCE+1+'07%20(9).webp"><p>AIR FORCE</p><br><p2>Men Foot Wear<br></p2><p3>187 $</p3><button class="cart-button ggs">
+                Add to Cart
+                <span class="arrow">➜</span>
+            </button></div>
+            <div><img class="doit2" src="https://stridestyle.netlify.app/public/assets/Images/Black/NIKE+COURT+VISION+LO+NN%20(8).webp"><p16>AIR FORCE</p16><br><p17>Men Foot Wear<br></p17><p18>176 $</p18><button class="cart-button gg">
+                Add to Cart
+                <span class="arrow">➜</span>
+            </button></div>
+            <div><img class="doit3" src="https://stridestyle.netlify.app/public/assets/Images/Black/AIR+FORCE+1+'07%20(8).webp"><p10>SEKATCHES</p10><br><p12>Men Foot Wear<br></p12><p13>147 $</p13><button class="cart-button gg">
+                Add to Cart
+                <span class="arrow">➜</span>
+            </button></div>
+        </div>
+        <div class="nikepics">
+            <div><img class="doit f" src="https://stridestyle.netlify.app/public/assets/Images/Blue/NIKE+COURT+VISION+LO+NN%20(2).webp"><p>AIR FORCE</p><br><p2>Men Foot Wear<br></p2><p3>567 $</p3> <button class="cart-button">
+                Add to Cart
+                <span class="arrow">➜</span>
+            </button></div>
+            <div><img class="doit1 f" src="https://stridestyle.netlify.app/public/assets/Images/White/AIR+FORCE+1+'07+FRESH%20(1).webp"><p>NIKE AIR O</p><br><p2>Men Foot Wear<br></p2><p3>137 $</p3><button class="cart-button ggs">
+                Add to Cart
+                <span class="arrow">➜</span>
+            </button></div>
+            <div><img class="doit2 f" src="https://stridestyle.netlify.app/public/assets/Images/White/AIR+FORCE+1+'07%20(11).webp"><p16>AIR F</p16><br><p17>Men Foot Wear<br></p17><p18>155 $</p18><button class="cart-button gg">
+                Add to Cart
+                <span class="arrow">➜</span>
+            </button></div>
+            <div><img class="doit3 f" src="https://stridestyle.netlify.app/public/assets/Images/Black/NIKE+COURT+VISION+LO+NN%20(8).webp"><p10>SEKATCHES</p10><br><p12>Men Foot Wear<br></p12><p13>167 $</p13><button class="cart-button gg">
+                Add to Cart
+                <span class="arrow">➜</span>
+            </button></div>
+        </div>
+        <div class="nikepicss">
+            <div><img class="doit f" src="https://stridestyle.netlify.app/public/assets/Images/Orange/NIKE+REVOLUTION+7%20(2).webp"><p>AIR FORCE</p><br><p2>Men Foot Wear<br></p2><p3>198 $</p3> <button class="cart-button">
+                Add to Cart
+                <span class="arrow">➜</span>
+            </button></div>
+            <div><img class="doit1 f" src="https://stridestyle.netlify.app/public/assets/Images/White/NIKE+COURT+VISION+LO+NN%20(9).webp"><p>AIR FORCE</p><br><p2>Men Foot Wear<br></p2><p3>147 $</p3><button class="cart-button ggs">
+                Add to Cart
+                <span class="arrow">➜</span>
+            </button></div>
+            <div><img class="doit2 f" src="https://stridestyle.netlify.app/public/assets/Images/White/AIR+FORCE+1+'07%20(11).webp"><p16>AIR FORCE</p16><br><p17>Men Foot Wear<br></p17><p18>197 $</p18><button class="cart-button gg">
+                Add to Cart
+                <span class="arrow">➜</span>
+            </button></div>
+            <div><img class="doit3 f" src="https://stridestyle.netlify.app/public/assets/Images/Blue/NIKE+AIR+MAX+ISHOD%20(4).webp"><p10>SEKATCHES</p10><br><p12>Men Foot Wear<br></p12><p13>167 $</p13><button class="cart-button gg">
+                Add to Cart
+                <span class="arrow">➜</span>
+            </button></div>
+        </div>
+        <div class="nikepicsss">
+            <div><img class="doit f" src="https://stridestyle.netlify.app/public/assets/Images/Green/NIKE+ZOOMX+VAPORFLY.webp"><p>
+                NIKE R</p><br><p2>Men Foot Wear<br></p2><p3>200 $</p3> <button class="cart-button">
+                Add to Cart
+                <span class="arrow">➜</span>
+            </button></div>
+            <div><img class="doit1 f" src="https://stridestyle.netlify.app/public/assets/Images/White/NIKE+COURT+VISION+LO+NN%20(9).webp"><p>AIR FORCE</p><br><p2>Men Foot Wear<br></p2><p3>234 $</p3><button class="cart-button ggs">
+                Add to Cart
+                <span class="arrow">➜</span>
+            </button></div>
+            <div><img class="doit2 f" src="https://stridestyle.netlify.app/public/assets/Images/White/AIR+FORCE+1+'07%20(11).webp"><p16>JORDAN</p16><br><p17>Men Foot Wear<br></p17><p18>564 $</p18><button class="cart-button gg">
+                Add to Cart
+                <span class="arrow">➜</span>
+            </button></div>
+            <div><img class="doit3 f" src="https://stridestyle.netlify.app/public/assets/Images/Blue/NIKE+REVOLUTION+7%20(3).webp"><p10>SEKATCHES</p10><br><p12>Men Foot Wear<br></p12><p13>147 $</p13><button class="cart-button gg">
+                Add to Cart
+                <span class="arrow">➜</span>
+            </button></div>
+        </div>
+        <div class="nikepicssse">
+            <div><img class="doit f" src="https://stridestyle.netlify.app/public/assets/Images/Blue/M+NIKE+MC+TRAINER+3.webp"><p>AIR FORCE</p><br><p2>Men Foot Wear<br></p2><p3>167 $</p3> <button class="cart-button">
+                Add to Cart
+                <span class="arrow">➜</span>
+            </button></div>
+            <div><img class="doit1 f" src="https://stridestyle.netlify.app/public/assets/Images/White/NIKE+COURT+VISION+LO+NN%20(9).webp"><p>AIR FORCE</p><br><p2>Men Foot Wear<br></p2><p3>127 $</p3><button class="cart-button ggs">
+                Add to Cart
+                <span class="arrow">➜</span>
+            </button></div>
+            <div><img class="doit2 f" src="https://stridestyle.netlify.app/public/assets/Images/Black/AIR+FORCE+1+'07%20(15).webp"><p16>JORDAN</p16><br><p17>Men Foot Wear<br></p17><p18>137 $</p18><button class="cart-button gg">
+                Add to Cart
+                <span class="arrow">➜</span>
+            </button></div>
+            <div><img class="doit3 f" src="https://stridestyle.netlify.app/public/assets/Images/Orange/NIKE+AIR+MAX+ISHOD%20(5).webp"><p10>SEKATCHES</p10><br><p12>Men Foot Wear<br></p12><p13>167 $</p13><button class="cart-button gg">
+                Add to Cart
+                <span class="arrow">➜</span>
+            </button></div>
+        </div>
+        <div class="nikepicsssee">
+            <div><img class="doit fss" src="https://www.joopiter.com/_next/image?url=https%3A%2F%2Fimages.ctfassets.net%2Ftq3cyaylborl%2F4aGxXHyjQj4qoTy8K04a6y%2Fa4d3cc82fab0b2e49f0622abf52049c6%2FPWA025040_01.jpg&w=3840&q=75"><p>AIR AIR MAG</p><br><p2>Men Foot Wear<br></p2><p3>10,000 $</p3> <button class="cart-button">
+                Add to Cart
+                <span class="arrow">➜</span>
+            </button></div>
+            <div><img class="doit1 f" src="nike.pic10.webp"><p>NIKE AIR SEYRIA 4</p><br><p2>Men Foot Wear<br></p2><p3>127 $</p3><button class="cart-button ggs">
+                Add to Cart
+                <span class="arrow">➜</span>
+            </button></div>
+    </main>
+</body>
+</html>
